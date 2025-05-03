@@ -1,80 +1,114 @@
-# 🤖 Cyber Finance ML Dashboard
+# Financial Machine Learning Dashboard Assignment
 
-A cyberpunk-themed machine learning dashboard for cryptocurrency price prediction, featuring neural networks, encrypted data streams, and a retro-futuristic UI.
+## Overview
+Build an interactive Streamlit application that implements a machine learning pipeline for financial data analysis. The application should follow a corporate blue theme and provide a professional, dashboard-style interface for financial data analysis and visualization.
 
-## 🎨 Features
+## Learning Outcomes
+- **LO3:** Develop financial models and algorithms for decision-making
+- **LO5:** Visualize and interpret financial data effectively using Python tools
+- **LO8:** Demonstrate self-learning skills to enhance programming capabilities for finance
 
-- **Neural Network Predictions**: LSTM-based price forecasting
-- **Cyberpunk UI**: Neon-drenched interface with glitch effects
-- **Data Encryption**: Secure storage of financial data
-- **Real-time Updates**: Live crypto price tracking
-- **Interactive Visualizations**: 3D plots with cyberpunk styling
+## Theme & Design Guidelines
+- **Color Scheme:** Navy (#000080) + Silver (#C0C0C0)
+- **Font:** Sans-serif (Roboto)
+- **Visual Elements:**
+  - Stock-ticker ribbon animation at the top
+  - Office-building skyline divider between sections
+  - Professional dashboard layout
 
-## 🛠️ Installation
+## Requirements
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/CyberFinanceML.git
-cd CyberFinanceML
-```
+### Data Sources
+- Upload static datasets from Kragle
+- Fetch real-time quotes with `yfinance`
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+### Machine Learning Models (Choose One)
+- Linear Regression
+- Logistic Regression
+- K-Means Clustering
 
-3. Run the application:
-```bash
-streamlit run app.py
-```
+### Required Python Libraries
+- streamlit
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- plotly
+- yfinance
 
-## 📊 Data Sources
+## Task Description
 
-- Yahoo Finance API for historical data
-- Encrypted local storage for processed data
-- Real-time price updates
+### A. Welcome Interface
+- Finance-themed welcome screen
+- Custom background color and themed buttons
+- Sidebar for data input:
+  - Kragle dataset upload
+  - Yahoo Finance data fetch
 
-## 🔒 Security Features
+### B. Step-by-Step ML Pipeline
+1. **Data Loading**
+   - Upload or fetch data
+   - Display data preview
+   - Success notification
 
-- AES-256 encryption for data storage
-- Secure key management
-- Encrypted data streams
+2. **Preprocessing**
+   - Clean missing values
+   - Handle outliers
+   - Display preprocessing statistics
 
-## 🎮 UI Components
+3. **Feature Engineering**
+   - Select/transform features
+   - Display feature importance
 
-- Cyber-terminal interface
-- Animated crypto tickers
-- Neural network status indicators
-- Holographic data visualizations
+4. **Model Training**
+   - Train/test split
+   - Model fitting
+   - Training progress indicators
 
-## 🤖 Machine Learning Models
+5. **Results Visualization**
+   - Model metrics
+   - Interactive plots
+   - Prediction visualizations
 
-1. **Neural Regression** (PyTorch LSTM)
-2. **Quantum Clustering** (SciKit-Learn)
-3. **Dark Market Predictor** (Prophet)
+### C. Additional Features
+- Interactive Plotly visualizations
+- Themed GIFs and images
+- Downloadable results
+- Real-time data updates
 
-## 📦 Project Structure
+## Expected Deliverables
+1. Well-commented Jupyter Notebook (`.ipynb`)
+2. Streamlit app runnable locally
+3. *(Optional Bonus)* Public Streamlit Cloud deployment
 
-```
-CyberFinanceML/
-├── app.py              # Main Streamlit application
-├── models.py           # Neural network models
-├── data_handler.py     # Data processing and encryption
-├── requirements.txt    # Project dependencies
-└── README.md          # Project documentation
-```
+## Bonus Points
+- Dynamic model selection
+- Feature importance visualization
+- Real-time data auto-refresh
+- Download button for results
 
-## 🚀 Future Enhancements
+## How to Run
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
 
-- NFT-style model ownership
-- Hacking mini-game for data preprocessing
-- GANs for synthetic data generation
-- WebSocket integration for real-time predictions
+## Grading Criteria
+- Code quality and organization (30%)
+- UI/UX implementation (20%)
+- ML pipeline functionality (30%)
+- Documentation and comments (20%)
 
-## 📝 License
+## Submission Guidelines
+1. Submit your Jupyter Notebook and Streamlit app code
+2. Include a brief report explaining your implementation choices
+3. *(Optional)* Include Streamlit Cloud deployment link
 
-MIT License - Feel free to use and modify for your own projects!
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. 
+## Resources
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Yahoo Finance API Documentation](https://pypi.org/project/yfinance/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html) 
