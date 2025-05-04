@@ -9,4 +9,5 @@ Pillow>=10.0.0
 openpyxl==3.1.2
 statsmodels==0.13.5 
 setuptools>=65.5.1
-wheel>=0.40.0 
+wheel>=0.40.0
+mlflow 
